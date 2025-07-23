@@ -1,91 +1,78 @@
-[# Instagram-SQL-Analysis
-An SQL-based analysis of a tech influencer's Instagram data to uncover insights on content performance and audience growth.](https://i.imgur.com/your_image_link.png" alt="Logo" width="120">
+# Instagram Tech Influencer: SQL Analysis
 
-Instagram Tech Influencer: SQL Analysis
+An in-depth SQL analysis of an Instagram tech influencer’s account over nine months to extract insights and improve content strategy.
 
-An in-depth analysis of Instagram performance data using SQL to derive actionable insights for content strategy and audience growth.
+---
 
+## 📌 Project Overview
 
+This project explores Instagram performance data using SQL to answer key business questions related to content performance, audience engagement, and follower growth.
 
+The final output includes data-driven recommendations for growing an influencer's reach and refining their content approach.
 
-Explore the analysis »
+---
 
+## 🧰 Tools Used
 
+- MySQL Workbench  
+- SQL
 
+---
 
-https://github.com/your-username/Instagram-SQL-Analysis/blob/main/queries/instagram_analysis_queries.sql">View SQL Queries
-·
-https://github.com/your-username/Instagram-SQL-Analysis/blob/main/ppt/Instagram%20Analysis%20Presentation.pdf">View Presentation
+## 🗃️ Dataset Structure
 
-📋 About The Project
-This project involves a comprehensive analysis of an Instagram tech influencer's account data over a nine-month period. The primary objective was to answer 10 key business questions by writing SQL queries to explore content performance, engagement trends, and follower growth patterns. The final output includes a set of actionable recommendations to help refine the influencer's content strategy.
+The database consists of three main tables:
 
-Tools Used:
+- **dim_dates**: Contains calendar-related attributes (month, week number, weekday/weekend flags).
+- **fact_account**: Daily account-level metrics (e.g., profile visits, new followers).
+- **fact_content**: Metrics per content post (e.g., post type, impressions, likes, comments, saves).
 
-MySQL Workbench
+SQL script to create and populate the database is in the `/datasets` folder.
 
-SQL
+---
 
-🗃️ Dataset
-The analysis is based on a relational database consisting of three main tables:
+## 📈 Analysis Objectives
 
-dim_dates: A dimension table containing date-related attributes like month, week number, and weekday/weekend flags.
+The analysis answers 10 core business questions using SQL:
 
-fact_account: A fact table with daily account-level metrics, including profile visits and new followers.
+1. **Post Types**: Count unique post types.
+2. **Impression Range**: Find max/min impressions per post type.
+3. **Weekend Posts**: Filter all weekend posts from March and April.
+4. **Monthly Growth**: Profile visits and new followers per month.
+5. **Top July Categories**: Rank categories by total likes in July.
+6. **Category Diversity**: Count unique post categories per month.
+7. **Reach Breakdown**: Percentage of total reach by post type.
+8. **Quarterly Engagement**: Comments and saves per category by quarter.
+9. **Golden Days**: Top 3 follower-growth days each month.
+10. **Reusable Reporting**: Stored procedure to report shares by post type for any week.
 
-fact_content: A fact table with detailed metrics for each piece of content posted, including post type, category, impressions, reach, likes, comments, and saves.
+Full SQL queries: [`instagram_analysis_queries.sql`](https://github.com/MasihuzzamanSayyed/Instagram-SQL-Analysis/blob/main/queries/instagram_analysis_queries.sql)
 
-The raw SQL script to create and populate this database is available in the /datasets folder.
+---
 
-📈 Analysis & Key Questions
-The core of this project was to answer the following 10 questions using SQL:
+## 💡 Key Insights & Recommendations
 
-Content Variety: How many unique post types are there?
+### Insights:
+- **Reels outperform other content types** in reach and follower growth.
+- **Tech Tips and Gadget posts** consistently rank high in engagement.
+- **Follower spikes** align with high-performing posts ("Golden Days").
 
-Impression Range: What are the highest and lowest impressions for each post type?
+### Recommendations:
+- **Prioritize Reels**: Focus on short-form videos that deliver value.
+- **Leverage Weekend Insights**: Tailor weekend content using past performance data.
+- **Monthly Golden Day Review**: Identify and replicate top-performing strategies.
 
-Weekend Performance: Filter all posts from weekends in March and April.
+---
 
-Monthly Growth: Report total profile visits and new followers per month.
+## 🚀 How To Reproduce
 
-Top Categories in July: Rank post categories by total likes in July.
+1. Clone this repository.
+2. Load `gdb0120.sql` in MySQL Workbench to create the database.
+3. Run `instagram_analysis_queries.sql` to execute all queries.
 
-Content Diversity: Report unique post categories and their count per month.
+---
 
-Reach Distribution: What is the percentage breakdown of total reach by post type?
+## 📎 Resources
 
-Quarterly Engagement: Report total comments and saves per category for each quarter.
-
-"Golden" Follower Days: List the top 3 dates each month with the most new followers.
-
-Reusable Reporting: Create a stored procedure to report shares by post type for any given week.
-
-The complete SQL script with all queries can be found in /queries/instagram_analysis_queries.sql.
-
-💡 Key Insights & Recommendations
-The analysis revealed several actionable insights:
-
-Insight 1: Reels Drive Growth: IG Reels are the primary engine for audience reach and new follower acquisition.
-
-Insight 2: Topic is Key: "Tech Tips" and "Gadget" content consistently generate the highest engagement in terms of likes and saves.
-
-Insight 3: Success is Measurable: Follower growth spikes can be directly attributed to specific, high-performing posts on "golden days."
-
-Recommendations:
-
-Double-Down on Reels: Prioritize short-form video content focusing on tech tips.
-
-Create a Weekend Playbook: Use the filtered weekend data to define a winning content strategy for Saturdays and Sundays.
-
-Implement a "Golden Day" Review: Establish a monthly process to analyze and replicate the content that led to the biggest follower spikes.
-
-🚀 How To Reproduce
-To replicate this analysis on your own local machine:
-
-Download the gdb0120.sql file.
-
-Load the .sql file into your MySQL Workbench instance and execute it to create the gdb0120 database.
-
-Download and run the instagram_analysis_queries.sql file to perform the analysis.
-
-(Important: Remember to replace your-username in the links with your actual GitHub username!))
+- [SQL Queries](https://github.com/MasihuzzamanSayyed/Instagram-SQL-Analysis/blob/main/queries/instagram_analysis_queries.sql)  
+- [Analysis Presentation (PDF)](https://github.com/MasihuzzamanSayyed/Instagram-SQL-Analysis/blob/main/ppt/Instagram%20Analysis%20Presentation.pdf)
