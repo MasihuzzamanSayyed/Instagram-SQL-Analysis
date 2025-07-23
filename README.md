@@ -46,7 +46,6 @@ The analysis answers 10 core business questions using SQL:
 9. **Golden Days**: Top 3 follower-growth days each month.
 10. **Reusable Reporting**: Stored procedure to report shares by post type for any week.
 
-Full SQL queries: [`instagram_analysis_queries.sql`](https://github.com/MasihuzzamanSayyed/Instagram-SQL-Analysis/blob/main/queries/instagram_analysis_queries.sql)
 
 ---
 
@@ -72,7 +71,4 @@ Full SQL queries: [`instagram_analysis_queries.sql`](https://github.com/Masihuzz
 
 ---
 
-## 📎 Resources
 
-- [SQL Queries](https://github.com/MasihuzzamanSayyed/Instagram-SQL-Analysis/blob/main/queries/instagram_analysis_queries.sql)  
-- [Analysis Presentation (PDF)](https://github.com/MasihuzzamanSayyed/Instagram-SQL-Analysis/blob/main/ppt/Instagram%20Analysis%20Presentation.pdf)
