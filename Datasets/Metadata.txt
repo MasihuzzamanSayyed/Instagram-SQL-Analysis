@@ -1,0 +1,63 @@
+This file contains all the meta information regarding the columns described in the database tables. We have provided 3 tables: 
+
+1. dim_date: 
+
+2. fact_account: 
+
+3. fact_content: 
+
+ 
+====================================================================================
+
+Column Description for dim_date: 
+
+Date: The date of the record. 
+
+Month Name: This column contains the name of the month for the date. 
+
+Week Name: This column contains the name of the week for the date. 
+
+Weekday | Weekend: This column indicates whether the date falls on a weekday or a weekend. 
+
+Week No: This column contains the week number for the date. 
+
+ 
+=====================================================================================
+
+Column Description for fact_account: 
+
+Date: This column contains the date. 
+
+Profile Visits: This column contains the number of times your profile was visited. 
+
+New Followers: This column contains the number of new accounts that started following your Instagram account as a result of ads, posts, and recommendations. 
+
+ 
+
+=====================================================================================
+
+Column Description for fact_content: 
+
+Date: This column contains the date. 
+
+Post category / Segment: This column contains the category or segment of the post, such as Mobile, Smartwatch, Earphone, Laptop, Other Gadgets and Tech Tips. 
+
+Post type: This column contains the Type of post - IG video, IG carousel, IG Image, IG Reel. 
+
+Video Duration: Applicable only for video and reel posts. The duration of the video in seconds. 
+
+Carousel Item Count: For carousel posts, the number of items (images or videos) in each carousel. 
+
+Impressions: This column contains the number of times your post was viewed. 
+
+Reach: This column contains the number of accounts your post was reached. 
+
+Shares: This column contains the number of times your post was shared. 
+
+Follows: This column contains the number of new accounts that started following your Instagram account from that specific post. 
+
+Likes: This column contains the number of likes on the post. 
+
+Comments: This column contains the number of comments on the post. 
+
+Saves: This column contains the number of saves on the post. 
